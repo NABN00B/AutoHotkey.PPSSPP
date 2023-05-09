@@ -7,6 +7,7 @@
 ; AUTO-EXECUTE
 #Warn All, MsgBox
 #NoEnv
+#Persistent
 #SingleInstance Force
 SetWinDelay, 0
 SetWorkingDir, %A_ScriptDir%
