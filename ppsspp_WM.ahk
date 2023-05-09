@@ -15,7 +15,9 @@ SetWorkingDir, %A_ScriptDir%
 gosub ResetVars
 gosub CreateGUI
 gosub UpdateGUI
-goto MainLogic
+gosub MainLogic
+return
+; End of AUTO-EXECUTE
 
 
 MainLogic:
