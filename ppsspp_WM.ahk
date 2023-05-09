@@ -1,6 +1,7 @@
-; ppsspp_WM.ahk by NABN00B (2023.05.01.)
-; Quick tool to retrieve the pointer to and the address in Windows memory where the emulated PSP's memory starts from.
-; Developed for and tested in AutoHotkey v1.1.31.01 to be run on 64-bit Windows.
+; ppsspp_WM.ahk by NABN00B
+; Quick tool to retrieve the pointer to and the address in Windows memory where the emulated PSP memory starts from.
+; Developed for and tested in AutoHotkey v1.1.31.01 to be run on x86-64 Windows.
+; Compile using the "Unicode 64-bit" base file.
 
 
 ; AUTO-EXECUTE
@@ -79,11 +80,11 @@ return
 
 SendWMs:
 Reply0 := wm_GetBasePointer(0) ; Retrieve lower 32 bits of PSP Memory Base Address.
-Reply2 := wm_GetBasePointer(2) ; Retrieve lower 32 bits of PPSSPP Memory Base Pointer.
+Reply2 := wm_GetBasePointer(2) ; Retrieve lower 32 bits of PSP Memory Base Pointer.
 if (ppsspp_Is64BitProcess)
 {
-	Reply1 := wm_GetBasePointer(1) ; Retrieve upper 32 bits of PPSSPP Memory Base Address.
-	Reply3 := wm_GetBasePointer(3) ; Retrieve upper 32 bits of PPSSPP Memory Base Pointer.
+	Reply1 := wm_GetBasePointer(1) ; Retrieve upper 32 bits of PSP Memory Base Address.
+	Reply3 := wm_GetBasePointer(3) ; Retrieve upper 32 bits of PSP Memory Base Pointer.
 }
 return
 
