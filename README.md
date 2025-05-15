@@ -18,4 +18,5 @@ A `PPSSPPWindows.exe` process running on x86-64 Windows has addressess and offse
 Seems to be between `0x00A0_0000` and `0x0100_0000`. A constant that is usually different for each build.
 
 ## Files
-**[ppsspp_WM.ahk](ppsspp_WM.ahk)** -- A tool that retrieves the `PSP Memory Base Address/Pointer` via window messages and calculates the `Base Offset to PSP Memory Base Pointer`. Useful for everyday hacking and also serves as a demonstration.
+- **[ppsspp_WM.ahk](ppsspp_WM.ahk)** -- A tool that retrieves the `PSP Memory Base Address/Pointer` via window messages and calculates the `Base Offset to PSP Memory Base Pointer`. Useful for everyday hacking and also serves as a demonstration.
+- **[ppsspp_WS.ahk](ppsspp_WS.ahk)** -- A tool that communicates with PPSSPP through its WebSocket API. Currently it is still in an experimental state and isn't asynchronous yet.
